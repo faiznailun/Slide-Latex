@@ -1,15 +1,31 @@
-\documentclass[aspectratio=169]{beamer}
-\setbeamertemplate{frametitle continuation}{}
+% Tanpa Animasi
+\documentclass[aspectratio=169,handout]{beamer}
+
+% Pdf Untuk di Print
+\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm]
+
+% Dengan Animasi
+%\documentclass[aspectratio=169]{beamer}
+
+%\hypersetup{pdfpagemode=FullScreen} %agar pdf auto fullscreen
+
+\setbeamertemplate{frametitle continuation}{} %untuk menghilangkan penomoran pada allowframebreaks
 \usetheme{Madrid}
-\hypersetup{pdfpagemode=FullScreen}
 \usepackage[indonesian]{babel}
+
+% Perlengkapan flowchart
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
-\usepackage[none]{hyphenat} %untuk menghilangkanpemenggalan kata
-\sloppy
+
+% Pemenggalan Kata
+\usepackage[none]{hyphenat} %tanpa pemenggalan kata
+\sloppy %teks rapi
+
 \usepackage{ragged2e}
 \usepackage{hyperref}
-%\setbeamercovered{transparent}
+
+%\setbeamercovered{transparent} %agar teks transparan
 
 % Perlengkapan pada table
 \usepackage{colortbl} %untuk color table
@@ -17,6 +33,7 @@
 \usepackage{longtable} %Untuk membuat table lebih panjang
 \usepackage{multirow}
 
+% Identitas
 \title[$K$-MEANS DAN ALGORITMA GENETIKA]{PENERAPAN K-MEANS DAN ALGORITMA GENETIKA UNTUK
 MENYELESAIKAN MTSP}
 \subtitle{(Studi Kasus Pada Perjalanan Menuju Seluruh SMA di Kabupaten Probolinggo)}
