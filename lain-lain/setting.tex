@@ -1,14 +1,14 @@
 % Tanpa Animasi
-\documentclass[aspectratio=169,handout]{beamer}
+%\documentclass[aspectratio=169,handout]{beamer}
+
+% Animasi
+\documentclass[aspectratio=169]{beamer}
 
 % Pdf Untuk di Print
-\usepackage{pgfpages}
-\pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm]
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm]
 
-% Dengan Animasi
-%\documentclass[aspectratio=169]{beamer}
-
-%\hypersetup{pdfpagemode=FullScreen} %agar pdf auto fullscreen
+\hypersetup{pdfpagemode=FullScreen} %agar pdf auto fullscreen
 
 \setbeamertemplate{frametitle continuation}{} %untuk menghilangkan penomoran pada allowframebreaks
 \usetheme{Madrid}
@@ -25,6 +25,9 @@
 \usepackage{ragged2e}
 \usepackage{hyperref}
 
+\usepackage{caption}
+\usepackage{subcaption}
+
 %\setbeamercovered{transparent} %agar teks transparan
 
 % Perlengkapan pada table
@@ -34,10 +37,10 @@
 \usepackage{multirow}
 
 % Identitas
-\title[$K$-MEANS DAN ALGORITMA GENETIKA]{PENERAPAN K-MEANS DAN ALGORITMA GENETIKA UNTUK
+\title[\textit{Multiple Travelling Salesman Problem}]{PENERAPAN K-MEANS DAN ALGORITMA GENETIKA UNTUK
 MENYELESAIKAN MTSP}
 \subtitle{(Studi Kasus Pada Perjalanan Menuju Seluruh SMA di Kabupaten Probolinggo)}
 \author{Muhammad Faiz Nailun Ni'am}
-\institute[UNUJA]{Pendidikan Matematika \\Universitas Nurul Jadid}
-\date{\today}
+\institute[PMAT UNUJA]{Pendidikan Matematika \\Universitas Nurul Jadid}
+\date{27 Juli 2022}
 \titlegraphic{\includegraphics[width=2cm]{lain-lain/logo}}
