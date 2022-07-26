@@ -18,8 +18,8 @@
 \onslide<1-> \node (1) [bulat] {Mulai};
 \onslide<2-> \node (2) [jajargenjang, below of=1, yshift=-0.8cm]{Dataset, tentukan $n$ klaster};
 \onslide<3-> \node (3) [kotak, below of=2, yshift=-1.2cm] {Pilih \textit{centroid} secara acak};
-\onslide<4-> \node (4) [kotak, right of=3, xshift=+2.5cm] {Hitung \textit{fitness}};
-\onslide<5-> \node (5) [kotak, above of=4, yshift=+2.6cm] {Pengelompokan berdasarkan \textit{fitness} terkecil};
+\onslide<4-> \node (4) [kotak, right of=3, xshift=+2.5cm] {Hitung jarak titik ke \textit{centroid}};
+\onslide<5-> \node (5) [kotak, above of=4, yshift=+2.6cm] {Pengelompokan berdasarkan jarak terkecil};
 \onslide<6-> \node (6) [kotak, right of=5, xshift=+2.5cm] {Memindahkan \textit{centroid} ke tengah area};
 \onslide<7-> \node (7) [belahketupat, below of=6, yshift=-2.6cm]{\textit{Centroid} berbeda?};
 \onslide<8-> \node (8) [jajargenjang, right of=7, xshift=+2.5cm] {Hasil klaster};
@@ -63,7 +63,7 @@
 \onslide <5-> \node (sel) [kotak, above of=fit, yshift=+0.6cm] {Seleksi};
 \onslide <6-> \node (cross) [kotak, above of=sel, yshift=+0.6cm] {\textit{Crossover}};
 \onslide <7-> \node (mut) [kotak, right of=cross, xshift=+2.5cm] {Mutasi};
-\onslide <8-> \node (opt) [belahketupat, below of=mut, yshift=-2.2cm] {Optimal};
+\onslide <8-> \node (opt) [belahketupat, below of=mut, yshift=-2.2cm] {Populasi sama?};
 \onslide <9-> \node (out) [jajargenjang, right of=opt, xshift=+2cm]{Kromosom Optimal};
 \onslide <10-> \node (E) [bulat, above of=out, yshift=+0.6cm] {Selesai};
 
